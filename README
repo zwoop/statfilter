@@ -1,0 +1,11 @@
+statfilter
+==========
+
+This is a very simple Unix style filter, that reads file names (or
+directory names) on STDIN (or command line), applies a configured set of
+stat() filtering rules to each file, and prints the matching files or
+directories on STDOUT.
+
+This is useful, for example, in shell scripts where you want to filter out
+certain files from the output of a command like 'dpkg' based on what type
+of file it is (i.e. select only names that are directories).
